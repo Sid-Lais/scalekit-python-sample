@@ -55,3 +55,9 @@ fastapi.exceptions.ResponseValidationError: 4 validation errors:
 
 - The SDK returns a tuple, not a dict/model, so FastAPI cannot match the expected response fields and raises a validation error.
 - This demonstrates that the SDK's return type is not compatible with Python API frameworks and breaks contract-based response validation.
+
+**How to see the full framework error log:**
+
+- Uncomment or restore the `response_model=PasswordlessSendResponse` (or similar) on the relevant FastAPI endpoint in `app/routes/auth.py`.
+- Trigger the endpoint via the UI or API.
+- The server log will show a `ResponseValidationError` and stack trace, demonstrating that the SDK’s tuple output cannot be validated or serialized by FastAPI.
