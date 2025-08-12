@@ -1,4 +1,3 @@
-
 # FastAPI Passwordless Auth – Minimal Repro Steps
 
 ## How to Reproduce the SDK Issue
@@ -25,6 +24,22 @@
    # with a valid email and template in the JSON body
    ```
 7. Observe the server log and API response for the raw SDK output and error.
+
+## To Run the Frontend UI
+
+1. Change to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the Next.js frontend:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser to http://localhost:3000 and use the UI to trigger passwordless auth flows. The UI will reflect the backend SDK issue in real time.
 
 ## Where to Find More Info
 
