@@ -1,0 +1,35 @@
+# Python
+venv/
+.env
+.env.*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js
+node_modules/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/coverage
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Misc
+*.sqlite3
+*.db
+
+# Ignore local settings
+local.settings.json
+
+# Next.js
+.next/
